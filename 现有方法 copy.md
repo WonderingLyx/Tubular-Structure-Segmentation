@@ -1,21 +1,21 @@
 - [Tubular Structure Segmentation](#tubular-structure-segmentation)
-    - [A Survey on Shape-Constraint Deep Learning  for Medical Image Segmentation](#a-survey-on-shape-constraint-deep-learning--for-medical-image-segmentation)
-    - [SCOPE: Structural Continuity Preservation for  Medical Image Segmentation](#scope-structural-continuity-preservation-for--medical-image-segmentation)
-    - [An Anatomy- and Topology-Preserving  Framework for Coronary Artery Segmentation](#an-anatomy--and-topology-preserving--framework-for-coronary-artery-segmentation)
-    - [Dynamic Snake Convolution based on Topological Geometric Constraints for  Tubular Structure Segmentation](#dynamic-snake-convolution-based-on-topological-geometric-constraints-for--tubular-structure-segmentation)
-    - [Coronary vessel segmentation in coronary angiography with a multiscale U-shaped transformer incorporating boundary aggregation  and topology preservation](#coronary-vessel-segmentation-in-coronary-angiography-with-a-multiscale-u-shaped-transformer-incorporating-boundary-aggregation--and-topology-preservation)
-    - [Deep Closing: Enhancing Topological  Connectivity in Medical Tubular Segmentation](#deep-closing-enhancing-topological--connectivity-in-medical-tubular-segmentation)
-    - [HarmonySeg: Tubular Structure Segmentation with  Deep-Shallow Feature Fusion and Growth-Suppression Balanced Loss](#harmonyseg-tubular-structure-segmentation-with--deep-shallow-feature-fusion-and-growth-suppression-balanced-loss)
-    - [Ensuring a connected structure for Retinal Vessels Deep-Learning Segmentation](#ensuring-a-connected-structure-for-retinal-vessels-deep-learning-segmentation)
-    - [A Benchmark Framework for Multiregion  Analysis of Vesselness Filters](#a-benchmark-framework-for-multiregion--analysis-of-vesselness-filters)
-    - [Accurate Airway Tree Segmentation in CT Scans  via Anatomy-Aware Multi-Class Segmentation  and Topology-Guided Iterative Learning](#accurate-airway-tree-segmentation-in-ct-scans--via-anatomy-aware-multi-class-segmentation--and-topology-guided-iterative-learning)
-    - [Skeleton Recall Loss for Connectivity  Conserving and Resource Efficient  Segmentation of Thin Tubular Structures](#skeleton-recall-loss-for-connectivity--conserving-and-resource-efficient--segmentation-of-thin-tubular-structures)
-    - [Representing Topological Self-Similarity Using  Fractal Feature Maps for Accurate Segmentation  of Tubular Structures](#representing-topological-self-similarity-using--fractal-feature-maps-for-accurate-segmentation--of-tubular-structures)
-    - [Topology Preserving Compositionality for Robust Medical Image Segmentation](#topology-preserving-compositionality-for-robust-medical-image-segmentation)
-    - [CORONARY ARTERY CENTERLINE TRACKING WITH THE MORPHOLOGICAL SKELETON LOSS](#coronary-artery-centerline-tracking-with-the-morphological-skeleton-loss)
-    - [Cascaded multitask U-Net using topological loss  for vessel segmentation and centerline  extraction](#cascaded-multitask-u-net-using-topological-loss--for-vessel-segmentation-and-centerline--extraction)
-    - [A skeletonization algorithm for gradient-based optimization](#a-skeletonization-algorithm-for-gradient-based-optimization)
-    - [Conformable Convolution for Topologically Aware Learning of Complex  Anatomical Structures](#conformable-convolution-for-topologically-aware-learning-of-complex--anatomical-structures)
+  - [A Survey on Shape-Constraint Deep Learning  for Medical Image Segmentation](#a-survey-on-shape-constraint-deep-learning--for-medical-image-segmentation)
+  - [SCOPE: Structural Continuity Preservation for  Medical Image Segmentation](#scope-structural-continuity-preservation-for--medical-image-segmentation)
+  - [An Anatomy- and Topology-Preserving  Framework for Coronary Artery Segmentation](#an-anatomy--and-topology-preserving--framework-for-coronary-artery-segmentation)
+  - [Dynamic Snake Convolution based on Topological Geometric Constraints for  Tubular Structure Segmentation](#dynamic-snake-convolution-based-on-topological-geometric-constraints-for--tubular-structure-segmentation)
+  - [Coronary vessel segmentation in coronary angiography with a multiscale U-shaped transformer incorporating boundary aggregation  and topology preservation](#coronary-vessel-segmentation-in-coronary-angiography-with-a-multiscale-u-shaped-transformer-incorporating-boundary-aggregation--and-topology-preservation)
+  - [Deep Closing: Enhancing Topological  Connectivity in Medical Tubular Segmentation](#deep-closing-enhancing-topological--connectivity-in-medical-tubular-segmentation)
+  - [HarmonySeg: Tubular Structure Segmentation with  Deep-Shallow Feature Fusion and Growth-Suppression Balanced Loss](#harmonyseg-tubular-structure-segmentation-with--deep-shallow-feature-fusion-and-growth-suppression-balanced-loss)
+  - [Ensuring a connected structure for Retinal Vessels Deep-Learning Segmentation](#ensuring-a-connected-structure-for-retinal-vessels-deep-learning-segmentation)
+  - [A Benchmark Framework for Multiregion  Analysis of Vesselness Filters](#a-benchmark-framework-for-multiregion--analysis-of-vesselness-filters)
+  - [Accurate Airway Tree Segmentation in CT Scans  via Anatomy-Aware Multi-Class Segmentation  and Topology-Guided Iterative Learning](#accurate-airway-tree-segmentation-in-ct-scans--via-anatomy-aware-multi-class-segmentation--and-topology-guided-iterative-learning)
+  - [Skeleton Recall Loss for Connectivity  Conserving and Resource Efficient  Segmentation of Thin Tubular Structures](#skeleton-recall-loss-for-connectivity--conserving-and-resource-efficient--segmentation-of-thin-tubular-structures)
+  - [Representing Topological Self-Similarity Using  Fractal Feature Maps for Accurate Segmentation  of Tubular Structures](#representing-topological-self-similarity-using--fractal-feature-maps-for-accurate-segmentation--of-tubular-structures)
+  - [Topology Preserving Compositionality for Robust Medical Image Segmentation](#topology-preserving-compositionality-for-robust-medical-image-segmentation)
+  - [CORONARY ARTERY CENTERLINE TRACKING WITH THE MORPHOLOGICAL SKELETON LOSS](#coronary-artery-centerline-tracking-with-the-morphological-skeleton-loss)
+  - [Cascaded multitask U-Net using topological loss  for vessel segmentation and centerline  extraction](#cascaded-multitask-u-net-using-topological-loss--for-vessel-segmentation-and-centerline--extraction)
+  - [A skeletonization algorithm for gradient-based optimization](#a-skeletonization-algorithm-for-gradient-based-optimization)
+  - [Conformable Convolution for Topologically Aware Learning of Complex  Anatomical Structures](#conformable-convolution-for-topologically-aware-learning-of-complex--anatomical-structures)
 
 # Tubular Structure Segmentation
 
@@ -94,7 +94,7 @@ U-Net等分割网络因其逐像素分割的特点极大地改变了基于深度
 
 ![1749904146697](image/现有方法/1749904146697.png)
 
-ADE模块分为两个部分，第一部分我们使用两个不同的ResUNets，一个用来预测心腔掩码，一个用于预测冠状动脉掩码，为了确保分割结果中包含所有细小的血管分支，我们采用**扩张标签**进行训练，在扩张标签的监督学习下，平均dice可以达到87.36%，包含92.86%的血管片段；第二部分是计算解剖距离场，首先我们从每个不同的心腔掩码中提取五个点集，即左心室、右心室、左心房、右心房和真个主动脉，表示为 ${O_1, O_2,...,O_5}$，每个点集包含8000个点， 而分割出来的血管掩码点集表示为$`P=[p_1,p_2,\dots, p_N]`$，距离场图是通过计算每个血管点和心腔点集之间的最小欧拉距离，这些距离会进一步归一化，并裁剪为上限为1，如公式 1，2所示。
+ADE模块分为两个部分，第一部分我们使用两个不同的ResUNets，一个用来预测心腔掩码，一个用于预测冠状动脉掩码，为了确保分割结果中包含所有细小的血管分支，我们采用**扩张标签**进行训练，在扩张标签的监督学习下，平均dice可以达到87.36%，包含92.86%的血管片段；第二部分是计算解剖距离场，首先我们从每个不同的心腔掩码中提取五个点集，即左心室、右心室、左心房、右心房和真个主动脉，表示为 ${O_1, O_2,...,O_5}$，每个点集包含8000个点， 而分割出来的血管掩码点集表示为$P=[p_1,p_2,..., p_N]$，距离场图是通过计算每个血管点和心腔点集之间的最小欧拉距离，这些距离会进一步归一化，并裁剪为上限为1，如公式 1，2所示。
 
 ![1749906608452](image/现有方法/1749906608452.png)
 
@@ -104,11 +104,11 @@ HTI模块将距离场图和近距离感兴趣区域作为输入，分为三个�
 
 二、对于血管的中心线分割，我们引入了一个中心线热力图单元和一个3D自适应高斯滤波器去生成局部中心热力图，这一部分因为没有代码我也没看懂具体的做法是什么
 
-三、领域连通性预测，文中提出了一个高效的方法去除分割掩码中的孤立点，获得初始的概率图，二值化后统计每个中心像素周围$3\times3\times3$区域内标记为1的数量，此时孤立点的统计值就会为1，再设定阈值为2进行二值化获得最后的分割掩码，关键是整个算法过程可以通过滑动窗口和矩阵操作快速计算
+三、领域连通性预测，文中提出了一个高效的方法去除分割掩码中的孤立点，获得初始的概率图，二值化后统计每个中心像素周围$`3\times3\times3`$区域内标记为1的数量，此时孤立点的统计值就会为1，再设定阈值为2进行二值化获得最后的分割掩码，关键是整个算法过程可以通过滑动窗口和矩阵操作快速计算
 
 ![1750039571429](image/现有方法/1750039571429.png)
 
-BAI模块引入交叉注意力机制学习不同分支特征之间的关系，$F_2$代表稀疏的特征分支，如中心线特征，$F_1$代表相对密集的分支，如连续性特征分支。大概意思是将上述经过不同处理后的特征之间进行融合。
+BAI模块引入交叉注意力机制学习不同分支特征之间的关系，$`F_2`$代表稀疏的特征分支，如中心线特征，$`F_1`$代表相对密集的分支，如连续性特征分支。大概意思是将上述经过不同处理后的特征之间进行融合。
 
 **总结：**
 
@@ -141,7 +141,7 @@ BAI模块引入交叉注意力机制学习不同分支特征之间的关系，$F
 
 ![1750078160975](image/现有方法/1750078160975.png)
 
-（1）可变形的卷积核DSConv，和一般的卷积核的不同在它的形状不是规则的，除中心之外的每个像素都可以在X轴或Y轴上有一个像素的偏移，如下图所示，17个单元就可以覆盖$9\times9$的区域，形变原则则是保证每个感受野单元之间是相连接的（至少保证对角线连接），这也保证了提取到的特征是连续的，但是怎么快速计算这种卷积核的部分没有看懂，文中使用了双线性插值，不懂这是为什么，得结合代码部分理解
+（1）可变形的卷积核DSConv，和一般的卷积核的不同在它的形状不是规则的，除中心之外的每个像素都可以在X轴或Y轴上有一个像素的偏移，如下图所示，17个单元就可以覆盖$`9\times9`$的区域，形变原则则是保证每个感受野单元之间是相连接的（至少保证对角线连接），这也保证了提取到的特征是连续的，但是怎么快速计算这种卷积核的部分没有看懂，文中使用了双线性插值，不懂这是为什么，得结合代码部分理解
 
 ![1750144786502](image/现有方法/1750144786502.png)
 
@@ -182,9 +182,9 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 ![1750757153337](image/现有方法/1750757153337.png)
 
-边界损失：由[kervadec](Kervadec H, Bouchtiba J, Desrosiers C, Granger E, Dolz J and Ben Ayed I 2021 Boundary loss for highly unbalanced segmentation Med. Image Anal. 67 101851)等人的边界损失函数发展而来，原本的方法比较好理解，就是找到和真实边界$`\delta G`$上的点到分割边界$`\delta S`$相对应的最短距离，本文将距离计算改成了积分面积计算，具体的公式推导文中细节太少了。
+边界损失：由[kervadec](Kervadec H, Bouchtiba J, Desrosiers C, Granger E, Dolz J and Ben Ayed I 2021 Boundary loss for highly unbalanced segmentation Med. Image Anal. 67 101851)等人的边界损失函数发展而来，原本的方法比较好理解，就是找到和真实边界$`\delta `G$上的点到分割边界$`\delta` S$相对应的最短距离，本文将距离计算改成了积分面积计算，具体的公式推导文中细节太少了。
 
-拓扑保留：用到了持久同源(Persistent homology)的原理，原理解释如，具体损失函数方程如下：$f$和$g$分别表示分割结果和真实值，$Dgm$表示持久同源方法计算出来的持久性图，$b(t)$和$d(t)$表示图像拓扑特征出现和消亡的时间在阈值变化的过程中，$\gamma^*(t)$表示最佳的一对一匹配。注意文中在epoch>20的情况下才加入拓扑保留损失函数。
+拓扑保留：用到了持久同源(Persistent homology)的原理，原理解释如，具体损失函数方程如下：$`f`$和$`g`$分别表示分割结果和真实值，$`Dgm`$表示持久同源方法计算出来的持久性图，$`b(t)`$和$`d(t)`$表示图像拓扑特征出现和消亡的时间在阈值变化的过程中，$`\gamma^*(t)`$表示最佳的一对一匹配。注意文中在epoch>20的情况下才加入拓扑保留损失函数。
 
 ![1750762490888](image/现有方法/1750762490888.png)
 
@@ -221,7 +221,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 ![1750919367219](image/现有方法/1750919367219.png)
 
-扩张的阶段是一个MAE，但是在分割标签的处理上经过了两步操作，首先是通过Mask generator生成动态掩码，分割标签$L$经过模块 Recurrent tubeScaler逐步消蚀不影响拓扑结构的简单点，（这一步操作和推理过程中的简单组件侵蚀很像，但是超参数K不会取到无穷，文中给的解释是作为数据增强），再将掩码加上输入Auto Encoder中进行重建，重建损失函数包括MSE和topology损失，本文的topology损失可以看做是从图像中选择拓扑关键点计算MSE，$M_{ns}$是经过Recurrent tubescaler模块消蚀后的掩码，关键拓扑点如图上蓝色部分可见。
+扩张的阶段是一个MAE，但是在分割标签的处理上经过了两步操作，首先是通过Mask generator生成动态掩码，分割标签$`L`$经过模块 Recurrent tubeScaler逐步消蚀不影响拓扑结构的简单点，（这一步操作和推理过程中的简单组件侵蚀很像，但是超参数K不会取到无穷，文中给的解释是作为数据增强），再将掩码加上输入Auto Encoder中进行重建，重建损失函数包括MSE和topology损失，本文的topology损失可以看做是从图像中选择拓扑关键点计算MSE，$`M_{ns}`$是经过Recurrent tubescaler模块消蚀后的掩码，关键拓扑点如图上蓝色部分可见。
 
 ![1750905615530](image/现有方法/1750905615530.png)
 
@@ -229,7 +229,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 ![1750907982637](image/现有方法/1750907982637.png)topology L
 
-第二阶段侵蚀过程文中设计了比较复杂的算法，主要分为四个步骤。第一步是构建简单点查找表，作者通过引理说明判断一个点是否为简单点仅需要分析它周围$3\times3$的区域即可，即比较区域内的模式就可以判断中心点是否为简单点，作者将$3\times3$的模式二进制序列化便于查找；第二步，传统的简单点匹配分类需要按顺序进行，文中进行了改进，通过4个不同的分隔掩码将图片分成四个部分并行进行查找匹配；第三步，如果简单点模式匹配成功，则将简单点消除，这一过程是递归的，4个部分并行的处理直到所选图像中没有简单点；第四步，前面三步可以说是侵蚀过程的铺垫，文中的侵蚀不是针对单一点进行侵蚀的，而是针对组件（components，一系列彼此相连的点构成的片段）进行消除，也就是说只有当一个组件是简单组件，才将整个组件消除。这里文中的解释比较复杂，可以简单理解为组件内所有的点都是简单点并在第三步中被消除后，整个联通的组件才会被消除。这么做的目的不是很清楚，我猜测应该是为了避免因侵蚀造成的过多离散点。
+第二阶段侵蚀过程文中设计了比较复杂的算法，主要分为四个步骤。第一步是构建简单点查找表，作者通过引理说明判断一个点是否为简单点仅需要分析它周围$`3\times3`$的区域即可，即比较区域内的模式就可以判断中心点是否为简单点，作者将$`3\times3`$的模式二进制序列化便于查找；第二步，传统的简单点匹配分类需要按顺序进行，文中进行了改进，通过4个不同的分隔掩码将图片分成四个部分并行进行查找匹配；第三步，如果简单点模式匹配成功，则将简单点消除，这一过程是递归的，4个部分并行的处理直到所选图像中没有简单点；第四步，前面三步可以说是侵蚀过程的铺垫，文中的侵蚀不是针对单一点进行侵蚀的，而是针对组件（components，一系列彼此相连的点构成的片段）进行消除，也就是说只有当一个组件是简单组件，才将整个组件消除。这里文中的解释比较复杂，可以简单理解为组件内所有的点都是简单点并在第三步中被消除后，整个联通的组件才会被消除。这么做的目的不是很清楚，我猜测应该是为了避免因侵蚀造成的过多离散点。
 
 ![1750918911702](image/现有方法/1750918911702.png)
 
@@ -269,9 +269,9 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 ![1750937458385](image/现有方法/1750937458385.png)
 
-**浅层和深层特征融合**（SADF），通过血管过滤器获得血管过滤图（血管过滤器是怎么设计的？），将血管过滤图视为一个新的模态，并通过SADF模块将两个模态特征进行融合。如上图中b所示，经过交叉注意力和自注意力获得$DQ_{V2C}$，血管过滤图突出了 CT 的整体血管密集区域，同时 CT 本身的整体依赖性也受到保护，免受血管噪音的严重影响。在$F_{V4}$和$F_{C4}$ 之间也进行类似的处理以获得 $DQ_{C2V}$ ，其目的是减轻 CT 中明显血管（例如位于肝脏边界的血管）对血管的异常值的负面影响。
+**浅层和深层特征融合**（SADF），通过血管过滤器获得血管过滤图（血管过滤器是怎么设计的？），将血管过滤图视为一个新的模态，并通过SADF模块将两个模态特征进行融合。如上图中b所示，经过交叉注意力和自注意力获得$`DQ_{V2C}`$，血管过滤图突出了 CT 的整体血管密集区域，同时 CT 本身的整体依赖性也受到保护，免受血管噪音的严重影响。在$`F_{V4}`$和$`F_{C4}`$ 之间也进行类似的处理以获得 $`DQ_{C2V}`$ ，其目的是减轻 CT 中明显血管（例如位于肝脏边界的血管）对血管的异常值的负面影响。
 
-**浅层查询**（SQ），浅层特征图比深层特征图包含更准确的空间信息，因此我们利用血管过滤图来帮助定位 CT 图像中的潜在血管。首先，我们将 CT 和血管的浅层特征融合，然后在通道维度上将它们平均分成$F_{S1}$和$F_{S2}$，以降低自注意力机制的计算成本。然后，$F_{S1}$被反馈到 Self 中，其中池化作用于提高对受 [24] 启发的微小目标的敏感性。优化的 F S′ 1 表示全局尺度下的候选血管，并进一步与 F S2 连接以恢复原始形状。最后，SQi 与通过上采样后的$DQ_{V2C}$和$DQ_{C2V}$ 相加，融合所有血管的信息并输入到并行多解码阶段，
+**浅层查询**（SQ），浅层特征图比深层特征图包含更准确的空间信息，因此我们利用血管过滤图来帮助定位 CT 图像中的潜在血管。首先，我们将 CT 和血管的浅层特征融合，然后在通道维度上将它们平均分成$`F_{S1}`$和$`F_{S2}`$，以降低自注意力机制的计算成本。然后，$`F_{S1}`$被反馈到 Self 中，其中池化作用于提高对受 [24] 启发的微小目标的敏感性。优化的 F S′ 1 表示全局尺度下的候选血管，并进一步与 F S2 连接以恢复原始形状。最后，SQi 与通过上采样后的$`DQ_{V2C}`$和$`DQ_{C2V}`$ 相加，融合所有血管的信息并输入到并行多解码阶段，
 
 **可变卷积块**，为了提取到不同分辨率的特征，如下图所示，为了避免扩张卷积（dilated convolution）字提取血管局部细节时产生的网格化效应，我们采用灵活的卷积块通过并行堆叠的方式而不是扩张卷积来提供不同的感受野
 
@@ -281,7 +281,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 ![1750988806455](https://file+.vscode-resource.vscode-cdn.net/d%3A/BaiduSyncdisk/Project/md/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/%E5%8C%BB%E5%AD%A6%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98/image/%E7%8E%B0%E6%9C%89%E6%96%B9%E6%B3%95/1750988806455.png)
 
-和扩张侵蚀思路类似，骨架增长抑制方法也是先扩张分割边界（骨架生长），再消除多余的点（噪声抑制）。和一般后处理的方法不同的是，本文的生长阶段是通过放松损失函数实现，对于真实标签$y$和预测标签$\hat{y}$，文中设计了一类uncertain-aware标签$\hat y'$, 并改变为宽松的损失函数，原理上应该是将二值化的标签0，1之间加入了模糊值，使得模型预测的骨架更粗大。
+和扩张侵蚀思路类似，骨架增长抑制方法也是先扩张分割边界（骨架生长），再消除多余的点（噪声抑制）。和一般后处理的方法不同的是，本文的生长阶段是通过放松损失函数实现，对于真实标签$`y`$和预测标签$`\hat{y}`$，文中设计了一类uncertain-aware标签$`\hat y'`$, 并改变为宽松的损失函数，原理上应该是将二值化的标签0，1之间加入了模糊值，使得模型预测的骨架更粗大。
 
 ![1750989291021](image/现有方法/1750989291021.png)
 
@@ -289,17 +289,17 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 **一致性损失函数：**
 
-为了重建断连的血管区域，保持与周围血管的密度一致性，我们设计了一个连续性损失函数，其中$\hat y^s$表示骨架化标签，根据cldice这篇文章获得；$\hat y^s$表示重新连接骨架标签，对于每个较小的组件，我们识别出所有的终端节点，然后在每个组件之间画一条线，将每个组件的端点连接到最近的端点，这是这篇文章的方法Ensuring a connected structure for retinal vessels deep-learning segmentation
+为了重建断连的血管区域，保持与周围血管的密度一致性，我们设计了一个连续性损失函数，其中$`\hat y^s`$表示骨架化标签，根据cldice这篇文章获得；$`\hat y^s`$表示重新连接骨架标签，对于每个较小的组件，我们识别出所有的终端节点，然后在每个组件之间画一条线，将每个组件的端点连接到最近的端点，这是这篇文章的方法Ensuring a connected structure for retinal vessels deep-learning segmentation
 
 ![1750990054765](image/现有方法/1750990054765.png)
 
 上下文噪声抑制 （Contextual noise suppression）
 
-文中设计了两个损失函数来约束生长过程产生的噪声，首先，采用浅层特征相似性来控制生长，确保扩展区域在密度分布和空间对齐方面与原始容器区域保持一致。$\Omega _r$表示半径为 r 的一个邻域，$k_{ij}$表示一个高斯核
+文中设计了两个损失函数来约束生长过程产生的噪声，首先，采用浅层特征相似性来控制生长，确保扩展区域在密度分布和空间对齐方面与原始容器区域保持一致。$`\Omega _r`$表示半径为 r 的一个邻域，$`k_{ij}`$表示一个高斯核
 
 ![1750991155384](image/现有方法/1750991155384.png)
 
-接着，我们使用 MixUp 技术作为辅助输入进一步生成混合样本，以强制混合等效性。给定两个输入图像$x_1$和$x_2$混合图像定义为$x'=\alpha x_1+(1-\alpha)x_2$, $\alpha$从均匀分布中采样，然后，这些混合输入的预测输出受以下损失函数的约束
+接着，我们使用 MixUp 技术作为辅助输入进一步生成混合样本，以强制混合等效性。给定两个输入图像$`x_1`$和$`x_2`$混合图像定义为$`x'=\alpha x_1+(1-\alpha)x_2`$, $`\alpha`$从均匀分布中采样，然后，这些混合输入的预测输出受以下损失函数的约束
 
 ![1750991819275](image/现有方法/1750991819275.png)
 
@@ -422,7 +422,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 针对树状结构的粗细不同问题，我们根据不同的粗细将树形气道分成三个部分，进行**三分类的分割**。标签的获得是全自动的，包括以下步骤：曲线骨架化 [33]、骨架标签 [34]、骨架到体积标签传播 [35] 和基于规则的解剖分支匹配。
 
-在每个迭代之间我们进行拓扑引导的伪标签细化（Topology-Guided Pseudo-Label Refinement）。首先是获得伪标签，使用联合运算符将第n次迭代中国预测的气道标签$\hat Y$和原始标签$Y$结合得到$\hat Y'$, 这样结合可以补上预测遗漏的假负点。接着通过一个breakage-connection 网络删除预测中与主树断开连接的组件。breakage-connection 网络通过**Breakage Attention Map**来训练网络，我们通过计算破损注意力图（breakage attention map）来突出破损区域。设$C_k$是$\hat Y'$中连通部件的数量，对于每个连通的部件$\hat Y_k'$，计算背景体素$j$和分量$\hat Y_k'$之间的**3D欧几里得距离变换图**。然后，将体素 j 处的原始breakage attention 值 $H$确定为到所有断裂片段中的第二短距离。**为什么用的是第二短距离？文中做了对比，使用第二短距离更能将注意力集中到断裂部分**
+在每个迭代之间我们进行拓扑引导的伪标签细化（Topology-Guided Pseudo-Label Refinement）。首先是获得伪标签，使用联合运算符将第n次迭代中国预测的气道标签$`\hat Y`$和原始标签$`Y`$结合得到$`\hat Y'`$, 这样结合可以补上预测遗漏的假负点。接着通过一个breakage-connection 网络删除预测中与主树断开连接的组件。breakage-connection 网络通过**Breakage Attention Map**来训练网络，我们通过计算破损注意力图（breakage attention map）来突出破损区域。设$`C_k`$是$`\hat Y'`$中连通部件的数量，对于每个连通的部件$`\hat Y_k'`$，计算背景体素$`j`$和分量$`\hat Y_k'`$之间的**3D欧几里得距离变换图**。然后，将体素 j 处的原始breakage attention 值 $`H`$确定为到所有断裂片段中的第二短距离。**为什么用的是第二短距离？文中做了对比，使用第二短距离更能将注意力集中到断裂部分**
 
 ![1751077237781](image/现有方法/1751077237781.png)
 
@@ -499,7 +499,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 **创新点：**
 
-1. 我们开发了一种策略，将分形特征整合到深度学习网络中。具体来说，我们将分形维度从图像级别扩展到像素级别，并生成分形特征图 （FFM），它表征了图像或其相关标签中每个区域的拓扑自相似性和纹理复杂性。从图像计算的 FFM 表示为 $FFM_{image}$，而从标签提取的 FFM 表示为$FFM_{label}$。**使用 $FFM_{image}$ 作为额外的模型输入，使用$FFM_{label}$作为额外的损失函数权重，大大提高了分割性能**
+1. 我们开发了一种策略，将分形特征整合到深度学习网络中。具体来说，我们将分形维度从图像级别扩展到像素级别，并生成分形特征图 （FFM），它表征了图像或其相关标签中每个区域的拓扑自相似性和纹理复杂性。从图像计算的 FFM 表示为 $`FFM_{image}`$，而从标签提取的 FFM 表示为$`FFM_{label}`$。**使用 $`FFM_{image}`$ 作为额外的模型输入，使用$`FFM_{label}`$作为额外的损失函数权重，大大提高了分割性能**
 2. 我们通过使用**边缘解码器**和**骨架解码器**扩展 U-Net 架构来开发多解码器网络 （MD-Net）。这些解码器使模型能够同时预测图像对象的**边界和骨架**，以及主要的**分割掩码**。通过在损失函数中加入相关约束，我们的模型不仅专注于实现准确的目标分割，而且还增加了对边界描绘和骨架保留的关注，从而提高了整体预测质量。
 3. FFM 模块即插即用，可以在不同模型结构上加入使用
 
@@ -547,17 +547,17 @@ $$
 \mathcal{L}_{Quant }=\frac{1}{m} \sum_{i=0}^{i=m-1}\left(\left\| s g\left(z_{i}\right)-e_{k}\right\| _{2}+\beta\left\| z_{i}-s g\left(e_{k}\right)\right\| _{2}\right)
 $$
 
-其中$sg$为停止梯度操作，$\beta =0.2$，目的是最小化潜在向量与字典组件的距离。
+其中$`sg`$为停止梯度操作，$`\beta =0.2`$，目的是最小化潜在向量与字典组件的距离。
 
 **2 形状解纠缠（Shape Disentanglement）**
 
-为确保组件无空间重叠（仅代表形状特征，剥离纹理信息），施加解纠缠损失，强制量化后经softmax的特征$\tilde {z}_i$ , $\tilde {z}_i$的内积为0（正交）：
+为确保组件无空间重叠（仅代表形状特征，剥离纹理信息），施加解纠缠损失，强制量化后经softmax的特征$`\tilde {z}_i`$ , $`\tilde {z}_i`$的内积为0（正交）：
 
 $$
 \mathcal{L}_{D L}=\sum_{i=0}^{i=m-1} \sum_{j=i+1}^{j=m-1} \tilde{z}_{i} \cdot \tilde{z}_{j}=0
 $$
 
-此时$\tilde{z}_i$近似为二值特征图（0或1），类分割输出$O_k^1$为组件求和，且为二值（无重叠）：
+此时$`\tilde{z}_i`$近似为二值特征图（0或1），类分割输出$`O_k^1`$为组件求和，且为二值（无重叠）：
 
 $$
 O_{k}^{1}=\sum_{i=mk/c}^{i=m(k+1)/c} \tilde{z}_{i}, \quad O_{k}^{1} \in(\mathbb{Z} / 2 \mathbb{Z})^{d}
@@ -567,14 +567,14 @@ $$
 
 通过持久同调计算分割结果与标签的拓扑特征，确保组件组合的拓扑准确性：
 
-- 构建立方复形（cubical complex）$C^\epsilon = \{x \in X | x \geq \epsilon\}$，通过阈值$\epsilon$的嵌套关系追踪拓扑特征变化；
-- 生成持久性图（persistence diagram）\(D\)，其中每个点$(b,d)$代表拓扑特征的“诞生”$(b)$和“死亡”$(d)$阈值；
-- 最小化预测分割$O_k^i$与标签$L_k^i$的持久性图的2-Wasserstein距离，确保拓扑一致：
+- 构建立方复形（cubical complex）$`C^\epsilon = \{x \in X | x \geq \epsilon\}`$，通过阈值$`\epsilon`$的嵌套关系追踪拓扑特征变化；
+- 生成持久性图（persistence diagram）\(D\)，其中每个点$`(b,d)`$代表拓扑特征的“诞生”$`(b)`$和“死亡”$`(d)`$阈值；
+- 最小化预测分割$`O_k^i`$与标签$`L_k^i`$的持久性图的2-Wasserstein距离，确保拓扑一致：
   $$
   d_{w}\left(\mathcal{D}, \mathcal{D}'\right)=\left(i n f_{\eta ; \mathcal{D} \to \mathcal{D}'} \sum_{x \in \mathcal{D}}\| x-\eta(x)\| _{\infty}^{2}\right)^{\frac{1}{2}}
   $$
 
-**4 分层拓扑约束（Hierarchical Topolo**gy）
+**4 分层拓扑约束（Hierarchical Topology）**
 
 通过深度监督在解码器各层施加两类拓扑损失：
 
@@ -615,7 +615,7 @@ $$
 
 ![1751252434934](image/现有方法/1751252434934.png)
 
-原始cldice 提取中心线的方法**不保证结果与原始对象具有相同的拓扑**。为此本文通过添加连接，如红框中所示，在 26 连通邻域内重新连接迭代的骨架，ps：maxpool kernel size = 26， minpool kernel size=6，这个获取与原始对象相同的拓扑应该就是这里$\odot$的操作。
+原始cldice 提取中心线的方法**不保证结果与原始对象具有相同的拓扑**。为此本文通过添加连接，如红框中所示，在 26 连通邻域内重新连接迭代的骨架，ps：maxpool kernel size = 26， minpool kernel size=6，这个获取与原始对象相同的拓扑应该就是这里$`\odot`$的操作。
 
 专为 3D 中心线分割设计的**类 Dice 损失**，结合精确率（Prec）和基于骨架的灵敏度（Sens），公式为：
 
@@ -667,7 +667,7 @@ $$
 Loss(S_P, S_G, C_P, C_G) = Dice(S_P, S_G) + \lambda_1 \cdot Dice(C_P, C_G) + \lambda_2 \cdot clDice(S_P, S_G, C_P, C_G)
 $$
 
-其中，$S_P/S_G$为预测/真实分割，$C_P/C_G$为预测/真实骨架，$\lambda_1=\lambda_2=0.5$
+其中，$`S_P/S_G`$为预测/真实分割，$`C_P/C_G`$为预测/真实骨架，$`\lambda_1=\lambda_2=0.5`$
 
 **总结：**
 
@@ -708,33 +708,33 @@ $$
 
 本方法遵循最常见的骨架化算法--迭代边界剥离方法 [32]的范式。此类算法的原理是**重复删除简单点，直到只剩下骨架**。
 
-> **一些基本概念**，对于离散二值化三维图像中的点$P=\{p(x,y,z)=0,1\}$：
+> **一些基本概念**，对于离散二值化三维图像中的点$`P=\{p(x,y,z)=0,1\}`$：
 >
-> 定义一个的点的**6邻域、18邻域和26邻域**为$N_6(p), N_{18}(p), N_{26}(p)$:
+> 定义一个的点的**6邻域、18邻域和26邻域**为$`N_6(p), N_{18}(p), N_{26}(p)`$:
 
 ![1751268238015](image/现有方法/1751268238015.png)
 
 > 位于彼此的 **n 邻域**内的点称为 **n 相邻**。如果存在一系列点 p = p0， ...， pk = p′，其中每个 pi 在 1 ≤ i ≤ k 内与 pi−1 **n 相邻**，则称两个点 p 和 p′ 是 **n 连接**的
 >
-> 对于一个二值化的图像，二进制图像的前景由值为 1 的点的集合 S 表示，而集合 $\bar S$表示值为 0 的其余点。我们可以定义：**对象 O** 作为S中的 n 个连接点的集合。$\bar S$ 中完全被 S 中的点包围的对象称为 S 中的**空腔 C**。最后，**孔 H** 可以直观地描述为穿过 S 的隧道。对象、空腔和孔可以类比地在$\bar S$中定义。
+> 对于一个二值化的图像，二进制图像的前景由值为 1 的点的集合 S 表示，而集合 $`\bar S`$表示值为 0 的其余点。我们可以定义：**对象 O** 作为S中的 n 个连接点的集合。$`\bar S`$ 中完全被 S 中的点包围的对象称为 S 中的**空腔 C**。最后，**孔 H** 可以直观地描述为穿过 S 的隧道。对象、空腔和孔可以类比地在$`\bar S`$中定义。
 >
 > **简单点**：如果删除一个点，在二值化图像中即从 1 更改为 0，而不会改变图像的拓扑，定义为简单点
 >
-> 判断简单点：使用$\delta$表示S和$S\{p}$之间的拓扑差异，根据定义可以列出：
+> 判断简单点：使用$`\delta`$表示S和$`S\{p}`$之间的拓扑差异，根据定义可以列出：
 
 ![1751268812410](image/现有方法/1751268812410.png)
 
-> 或者使用另一个被证明的判断准则，其中$G_{26}(S)$是一组26联通点的欧拉特征。
+> 或者使用另一个被证明的判断准则，其中$`G_{26}(S)`$是一组26联通点的欧拉特征。
 
 ![1751268987730](image/现有方法/1751268987730.png)
 
 **一、简单点的定义与识别**
 
-简单点是指删除后不改变对象拓扑的点，满足：删除后对象和背景的连通组件、孔洞数量不变, $\delta O=0, \delta G_{26}=0$，其中$G_{26}$为26连通对象的欧拉特征。
+简单点是指删除后不改变对象拓扑的点，满足：删除后对象和背景的连通组件、孔洞数量不变, $`\delta O=0, \delta G_{26}=0`$，其中$`G_{26}`$为26连通对象的欧拉特征。
 
 ![1751271814631](image/现有方法/1751271814631.png)
 
-- **基于欧拉特征的识别**：通过**8个预定义卷积核计算26邻域**内顶点、边、面和八分体的数量，结合欧拉特征公式$G_6 = \#v - \#e + \#f - \#oct$和$G_{26}(S) = G_6(\bar{S}) - 1$，判断删除点后欧拉特征是否变化，不变则为简单点。由于在删除一个点时 Euler 特征的不变性是简单点的必要条件，但不是充分条件，依据这个规则删除的简单点会**多于真正的情况**，在测试的过程中上述算法**在40.07% 的情况下将中心点描述为简单**，而**实际上只有 38.72% 是真正简单的**。
+- **基于欧拉特征的识别**：通过**8个预定义卷积核计算26邻域**内顶点、边、面和八分体的数量，结合欧拉特征公式$`G_6 = \#v - \#e + \#f - \#oct`$和$`G_{26}(S) = G_6(\bar{S}) - 1`$，判断删除点后欧拉特征是否变化，不变则为简单点。由于在删除一个点时 Euler 特征的不变性是简单点的必要条件，但不是充分条件，依据这个规则删除的简单点会**多于真正的情况**，在测试的过程中上述算法**在40.07% 的情况下将中心点描述为简单**，而**实际上只有 38.72% 是真正简单的**。
 
   ![1751272422438](image/现有方法/1751272422438.png)
 - **基于布尔规则的识别**：
@@ -744,11 +744,11 @@ $$
   [\begin{aligned} & (\# \overline{X_6}=1) \text{ 或 } (\# X_{26}=1) \\ & \text{或 } (\# B_{26}=0, \# X_{18}=1) \\ & \text{或 } (\# \overline{A_6}=0, \# B_{26}=0, \# B_{18}=0, \# \overline{X_6}-\# \overline{A_{18}}+\# \overline{A_{26}}=1) \end{aligned}
   $$
 
-  其中$\# X_n$为n邻域内前景点数量，$\#\overline{X_n}$为背景点数量，$\#B_{26}$等为特定构型数量。这种方法虽然使用了更多的卷积核，牺牲了一部分计算效率，但是检测出来的简单点都是准确的。
+  其中$`\# X_n`$为n邻域内前景点数量，$`\#\overline{X_n}`$为背景点数量，$`\#B_{26}`$等为特定构型数量。这种方法虽然使用了更多的卷积核，牺牲了一部分计算效率，但是检测出来的简单点都是准确的。
 
 **二、并行化删除简单点**
 
-将图像分为**8个子域**$S_{i,j,k} = \{p'(x+i,y+j,z+k) | x,y,z \in \{0,2,4,...\}, i,j,k \in \{0,1\}\}$，循环处理每个子域，**并行删除其中的简单点**（**非端点**），避免相邻点同时删除导致拓扑改变。此外，**显式的规定迭代删除的次数**，可以获得不同骨架化特征结果。为了保留更多的结构信息，我们还需要保留**端点**，定义为26邻域内前景点数量$\leq1$的点，
+将图像分为**8个子域**$`S_{i,j,k} = \{p'(x+i,y+j,z+k) | x,y,z \in \{0,2,4,...\}, i,j,k \in \{0,1\}\}`$，循环处理每个子域，**并行删除其中的简单点**（**非端点**），避免相邻点同时删除导致拓扑改变。此外，**显式的规定迭代删除的次数**，可以获得不同骨架化特征结果。为了保留更多的结构信息，我们还需要保留**端点**，定义为26邻域内前景点数量$`\leq1`$的点，
 
 ![1751273095089](image/现有方法/1751273095089.png)
 
@@ -764,7 +764,7 @@ $$
   X = \sigma\left(\frac{log\alpha + \beta L}{\tau}\right), \alpha = \frac{\alpha_1}{1-\alpha_1}
   $$
 
-  其中$\alpha_1$输入概率，\(L\)为逻辑分布采样，$\beta$和$\tau$控制熵。
+  其中$`\alpha_1`$输入概率，\(L\)为逻辑分布采样，$`\beta`$和$`\tau`$控制熵。
 - **直通估计器**：前向传播返回离散值，反向传播用恒等函数近似梯度，确保可微。
 
 这一部分文中介绍相对简略，没有太看懂。
