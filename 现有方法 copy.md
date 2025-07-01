@@ -17,8 +17,6 @@
     - [A skeletonization algorithm for gradient-based optimization](#a-skeletonization-algorithm-for-gradient-based-optimization)
     - [Conformable Convolution for Topologically Aware Learning of Complex  Anatomical Structures](#conformable-convolution-for-topologically-aware-learning-of-complex--anatomical-structures)
 
-
-
 # Tubular Structure Segmentation
 
 关键词：continuity preservation, continuity of anatomy,  shape constraints, continuity constraints
@@ -26,7 +24,7 @@
 ---
 
 ### A Survey on Shape-Constraint Deep Learning  for Medical Image Segmentation
->
+
 > IEEE REVIEWS IN BIOMEDICAL ENGINEERING, VOL. 16, 2023
 
 **动机：**
@@ -37,7 +35,7 @@ U-Net等分割网络因其逐像素分割的特点极大地改变了基于深度
 
 **讨论：**
 
-1. 传统方法中大多基于Markov Random Fields (MRF)和Conditional Random Fields(CRF)，他们能将图像全局知识融入网络中进而产生更平滑的分割边缘，但缺点是计算复杂度高并且收敛速度慢，大多数应用MRF和CRF方法的文章是将他们用作分割后处理网络，即CNN网络过后，将分割网络结果作为MRF的输入，也有一部分是训练CNN-CRF端到端语义分割网络，如$DeepVessel$
+1. 传统方法中大多基于Markov Random Fields (MRF)和Conditional Random Fields(CRF)，他们能将图像全局知识融入网络中进而产生更平滑的分割边缘，但缺点是计算复杂度高并且收敛速度慢，大多数应用MRF和CRF方法的文章是将他们用作分割后处理网络，即CNN网络过后，将分割网络结果作为MRF的输入，也有一部分是训练CNN-CRF端到端语义分割网络，如DeepVessel
 2. 另一种解决分割后的变形问题是将CNN分割网络和active shape model（ASM）结合，类似与配准，要求分割组织是规则的，包含不变的点基准。
 3. 最后一类是将CNN与active contour model （ACM）模型结合，ACM通过最小化能量函数实现轮廓的动态调整，可以通过MLP实现
 
@@ -49,7 +47,7 @@ U-Net等分割网络因其逐像素分割的特点极大地改变了基于深度
 ---
 
 ### SCOPE: Structural Continuity Preservation for  Medical Image Segmentation
->
+
 > arxiv: Stanford University Johns Hopkins University, 2023
 >
 > 无代码
@@ -68,16 +66,16 @@ U-Net等分割网络因其逐像素分割的特点极大地改变了基于深度
 
 ![1749824162294](image/现有方法/1749824162294.png)
 
-输入图片首先分成$n \times n$的patch，每个patch都对应一个图像向量$v_i$，每个图像向量都与相邻的向量进行全连接，每个patch的特征提取部分采用的是DRIU网络中的VGG-16结构，然后图构造模块$G(.)$所有采样的图节点预期对应的特征向量进行融合，已完成这个图构建过程。但是这个构建过程中并不含有任何形状限制，为了引入拓扑信息，图卷积网络（C）将提取节点级图形特征，并将它们与初始空间特征相结合，以对节点进行最终类预测。在推理阶段，则是根据每个节点的类别进行就近插值。损失函数采用的是cldice
+输入图片首先分成 `n \times n`的patch，每个patch都对应一个图像向量 `v_i`，每个图像向量都与相邻的向量进行全连接，每个patch的特征提取部分采用的是DRIU网络中的VGG-16结构，然后图构造模块 `G(.)`所有采样的图节点预期对应的特征向量进行融合，已完成这个图构建过程。但是这个构建过程中并不含有任何形状限制，为了引入拓扑信息，图卷积网络（C）将提取节点级图形特征，并将它们与初始空间特征相结合，以对节点进行最终类预测。在推理阶段，则是根据每个节点的类别进行就近插值。损失函数采用的是cldice
 
 **总结：**
 
-采用图神经网络对图像节点进行结构化分析，能提取网络当中的结构信息，但是文中的网格中只引入了垂直、水平和对角线连接，不能获取长距离的节点之间的关系。另外图神经网络就增强图像分割的形状连续性这点意义不明，如果每个节点都是一个像素则与逐像素分析的方法无异
+采用图神经网络对图像节点进行结构化分析, 能提取网络当中的结构信息，但是文中的网格中只引入了垂直、水平和对角线连接，不能获取长距离的节点之间的关系。另外图神经网络就增强图像分割的形状连续性这点意义不明，如果每个节点都是一个像素则与逐像素分析的方法无异
 
 ---
 
 ### An Anatomy- and Topology-Preserving  Framework for Coronary Artery Segmentation
->
+
 > IEEE TRANSACTIONS ON MEDICAL IMAGING, VOL. 43, NO. 2, FEBRUARY 2024
 >
 > 无代码
@@ -124,7 +122,7 @@ BAI模块引入交叉注意力机制学习不同分支特征之间的关系，$F
 ---
 
 ### Dynamic Snake Convolution based on Topological Geometric Constraints for  Tubular Structure Segmentation
->
+
 > 2023 IEEE/CVF International Conference on Computer Vision (ICCV)
 >
 > *https://github.com/YaoleiQi/DSCNet*
@@ -162,7 +160,7 @@ BAI模块引入交叉注意力机制学习不同分支特征之间的关系，$F
 ---
 
 ### Coronary vessel segmentation in coronary angiography with a multiscale U-shaped transformer incorporating boundary aggregation  and topology preservation
->
+
 > Phys. Med. Biol. 69 (2024) 025012
 >
 > 无代码、数据不开源
@@ -201,7 +199,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 ---
 
 ### Deep Closing: Enhancing Topological  Connectivity in Medical Tubular Segmentation
->
+
 > IEEE TRANSACTIONS ON MEDICAL IMAGING, VOL. 43, NO. 11, NOVEMBER 2024
 >
 > https://github.com/5k5000/DeepClosing
@@ -244,7 +242,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 ---
 
 ### HarmonySeg: Tubular Structure Segmentation with  Deep-Shallow Feature Fusion and Growth-Suppression Balanced Loss
->
+
 > arxiv2025 from DAMO Academy, Alibaba Group
 >
 > 暂时没有代码
@@ -322,7 +320,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 ---
 
 ### Ensuring a connected structure for Retinal Vessels Deep-Learning Segmentation
->
+
 > 2023 IEEE/CVF International Conference on Computer Vision (ICCV)
 >
 > 暂时没找到代码
@@ -353,10 +351,8 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 
 ---
 
-
-
 ### A Benchmark Framework for Multiregion  Analysis of Vesselness Filters
->
+
 > IEEE TRANSACTIONS ON MEDICAL IMAGING, VOL. 41, NO. 12, DECEMBER 2022
 >
 > filters code：
@@ -396,7 +392,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 ---
 
 ### Accurate Airway Tree Segmentation in CT Scans  via Anatomy-Aware Multi-Class Segmentation  and Topology-Guided Iterative Learning
->
+
 > IEEE TRANSACTIONS ON MEDICAL IMAGING, VOL. 43, NO. 12, DECEMBER 2024
 >
 > https://github.com/LiquidFun/Airway
@@ -445,7 +441,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 ---
 
 ### Skeleton Recall Loss for Connectivity  Conserving and Resource Efficient  Segmentation of Thin Tubular Structures
->
+
 > Computer Vision – ECCV 2024. ECCV 2024
 >
 > https://github.com/MIC-DKFZ/Skeleton-Recall
@@ -488,7 +484,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 ---
 
 ### Representing Topological Self-Similarity Using  Fractal Feature Maps for Accurate Segmentation  of Tubular Structures
->
+
 > arXiv:2407.14754v1 [eess.IV] 20 Jul 2024，This paper has been accepted by the European Conference on Computer Vision 2024.
 >
 > Institute of Automation, Chinese Academy of Sciences、DAMO Academy, Alibaba Group、Hupan Lab
@@ -510,7 +506,7 @@ backbone结构采用UTNetV2的结构，整体采用编码-解码框架，首先�
 ---
 
 ### Topology Preserving Compositionality for Robust Medical Image Segmentation
->
+
 > Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2023, pp. 543-552
 >
 > 暂时无代码
@@ -606,7 +602,7 @@ $$
 ---
 
 ### CORONARY ARTERY CENTERLINE TRACKING WITH THE MORPHOLOGICAL SKELETON LOSS
->
+
 > 2022 IEEE International Conference on Image Processing (ICIP)
 >
 > 数据集：225 例 CCTA 检查，分为训练集（100 例）、验证集（55 例）、测试集（70 例），测试集含严重钙化（40 例 CAC 评分 > 400）和支架（12 例）病例
@@ -640,7 +636,7 @@ $$
 ---
 
 ### Cascaded multitask U-Net using topological loss  for vessel segmentation and centerline  extraction
->
+
 > arXiv:2307.11603v2 [eess.IV] 22 Feb 2024
 >
 > 代码：https://github. com/PierreRouge/Cascaded-U-Net-for-vessel-segmentation
@@ -682,7 +678,7 @@ $$
 ---
 
 ### A skeletonization algorithm for gradient-based optimization
->
+
 > 2023 IEEE/CVF International Conference on Computer Vision (ICCV)
 >
 > 代码：[https://github.com/martinmenten/skeletonization-for-gradient-based-optimization](https://github.com/martinmenten/skeletonization-for-gradient-based-optimization)。
@@ -780,7 +776,7 @@ $$
 ---
 
 ### Conformable Convolution for Topologically Aware Learning of Complex  Anatomical Structures
->
+
 > arXiv:2412.20608v1 [eess.IV] 29 Dec 2024；Technical University of Munich
 >
 > 暂时无代码
